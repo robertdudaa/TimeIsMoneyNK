@@ -25,6 +25,7 @@ public class SyncPaymentTask extends Task {
         if (player.isOnline()) {
             if (player.getLocation().equals(location)) {
                 player.sendMessage(plugin.getConfigStore().getPrefix() + payout.getMessageAfk(player));
+                if(plugin.getConfigStore().isAfkPayout()) payout.pay(player);
             } else {
                 player.sendMessage(plugin.getConfigStore().getPrefix() + payout.getMessageReceive(player));
                 payout.pay(player);
