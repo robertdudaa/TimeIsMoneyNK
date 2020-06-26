@@ -16,7 +16,6 @@ public class TimeIsMoney extends PluginBase {
             this.getServer().getPluginManager().disablePlugin(this);
             return;
         }
-        System.out.println(this.configStore.toString());
 
 
     }
