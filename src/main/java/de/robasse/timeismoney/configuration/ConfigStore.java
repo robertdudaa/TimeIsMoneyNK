@@ -41,4 +41,14 @@ public class ConfigStore {
     public String getMessageAfk() {
         return messageAfk;
     }
+
+    @Override
+    public String toString() {
+        return "ConfigStore{" +
+                "afkPayout=" + afkPayout +
+                ", payouts=" + payouts +
+                ", prefix='" + prefix + '\'' +
+                ", messageAfk='" + messageAfk + '\'' +
+                '}';
+    }
 }

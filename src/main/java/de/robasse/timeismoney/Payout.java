@@ -57,4 +57,17 @@ public class Payout {
     public String getMessageReceive() {
         return messageReceive;
     }
+
+    @Override
+    public String toString() {
+        return "Payout{" +
+                "interval=" + interval +
+                ", amount=" + amount +
+                ", itemId=" + itemId +
+                ", itemName='" + itemName + '\'' +
+                ", permission='" + permission + '\'' +
+                ", payoutType=" + payoutType +
+                ", messageReceive='" + messageReceive + '\'' +
+                '}';
+    }
 }

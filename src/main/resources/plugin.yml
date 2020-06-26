@@ -1,0 +1,8 @@
+name: "${project.name}"
+version: "${project.version}"
+description: "${project.description}"
+main: "${project.groupId}.${project.artifactId}.${project.name}"
+api: ["1.0.9"]
+load: POSTWORLD
+author: robasse
+prefix: "TIMEISMONEY"
