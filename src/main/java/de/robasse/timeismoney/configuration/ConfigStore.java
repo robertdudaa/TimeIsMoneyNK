@@ -10,20 +10,17 @@ public class ConfigStore {
     private final boolean afkPayout;
     private final List<Payout> payouts;
     private final String prefix;
-    private final String messageAfk;
 
     public ConfigStore(boolean afkPayout, List<Payout> payouts, String prefix, String messageAfk) {
         this.afkPayout = afkPayout;
         this.payouts = payouts;
         this.prefix = prefix;
-        this.messageAfk = messageAfk;
     }
 
     public ConfigStore() {
         this.afkPayout = false;
         this.payouts = Arrays.asList(new Payout(), new Payout());
         this.prefix = "§e§lTIM §7> ";
-        this.messageAfk = "§cYou just missed %amount% because you were afk!";
     }
 
     public boolean isAfkPayout() {
@@ -36,9 +33,5 @@ public class ConfigStore {
 
     public String getPrefix() {
         return prefix;
-    }
-
-    public String getMessageAfk() {
-        return messageAfk;
     }
 }
