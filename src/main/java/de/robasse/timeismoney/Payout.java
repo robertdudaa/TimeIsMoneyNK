@@ -29,15 +29,15 @@ public class Payout {
     }
 
     public Payout() {
-        this.interval = 120;
+        this.interval = 600;
         this.amount = 500;
         this.itemId = 264;
         this.repeat = true;
         this.itemName = "§cYOUR NEW ITEM";
         this.permission = "tim.receive.starter";
         this.payoutType = PayoutType.BOTH;
-        this.messageReceive = "§a§lWOW %player%! §7You just received %amount% DOLLAR for being online another 120 seconds!";
-        this.messageAfk = "§cYou just missed %amount% because you were afk!";
+        this.messageReceive = "§a§lWOW %player%! §7You just received %amount% DOLLAR for being online another 10 minutes!";
+        this.messageAfk = "§cYou just missed %amount% DOLLAR because you were afk!";
     }
 
     public void pay(Player player) {
