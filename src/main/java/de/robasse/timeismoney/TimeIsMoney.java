@@ -17,10 +17,6 @@ public class TimeIsMoney extends PluginBase {
         this.getServer().getPluginManager().registerEvents(new PlayerJoinListener(this), this);
     }
 
-    @Override
-    public void onDisable() {
-    }
-
     public ConfigStore getConfigStore() {
         return configStore;
     }
