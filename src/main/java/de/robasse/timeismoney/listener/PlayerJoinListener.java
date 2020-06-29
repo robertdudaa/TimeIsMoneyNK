@@ -20,7 +20,7 @@ public class PlayerJoinListener implements Listener {
         plugin.getConfigStore().getPayouts().forEach(payout -> {
             if (!event.getPlayer().hasPermission(payout.getPermission())) return;
             plugin.getServer().getScheduler().scheduleDelayedTask(new SyncPaymentTask(plugin, event.getPlayer(), payout,
-                    event.getPlayer().getLocation()), payout.getInterval()*20);
+                    event.getPlayer().getLocation()), payout.getInterval() * 20);
         });
     }
 }

@@ -16,18 +16,6 @@ public class Payout {
     private final String messageReceive;
     private final String messageAfk;
 
-    public Payout(int interval, int amount, int itemId, boolean repeat, String itemName, String permission, PayoutType payoutType, String messageReceive, String messageAfk) {
-        this.interval = interval;
-        this.amount = amount;
-        this.itemId = itemId;
-        this.repeat = repeat;
-        this.itemName = itemName;
-        this.permission = permission;
-        this.payoutType = payoutType;
-        this.messageReceive = messageReceive;
-        this.messageAfk = messageAfk;
-    }
-
     public Payout() {
         this.interval = 600;
         this.amount = 500;
